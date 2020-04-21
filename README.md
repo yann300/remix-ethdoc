@@ -1,17 +1,10 @@
-{
-    "defaultSeverity": "error",
-    "extends": [
-        "tslint:recommended",
-        "tslint-config-prettier"
-    ],
-    "jsRules": {},
-    "rules": {
-        "object-literal-sort-keys": false,
-        "no-console": [
-            false,
-            "log",
-            "error"
-        ]
-    },
-    "rulesDirectory": []
-}
+# Remix Eth Doc Plugin
+
+
+## Getting started
+
+git clone git@github.com:Machinalabs/remix-ethdoc.git
+
+npm install
+
+npm start
