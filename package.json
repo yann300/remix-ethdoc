@@ -1,0 +1,40 @@
+{
+  "name": "remix-eth-doc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "publish": "surge dist machinalabs-remix-ethdoc-plugin.surge.sh",
+    "tslint": "tslint -p . -c tslint.json",
+    "tslint:fix": "tslint --fix -p . -c tslint.json",
+    "prettier": "prettier --write 'src/**/*.{ts,js,json}'",
+    "check-formatting": "prettier --list-different 'src/**/*.{ts,ts,js,json}'",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "coveralls": "^3.0.11",
+    "jest": "^25.4.0",
+    "lit-element": "^2.3.1",
+    "prettier": "^2.0.4",
+    "surge": "^0.21.3",
+    "ts-jest": "^25.4.0",
+    "ts-loader": "^7.0.1",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "tslint": "^6.1.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@remixproject/plugin-iframe": "^0.2.0-alpha.1"
+  }
+}
