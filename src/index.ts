@@ -55,7 +55,7 @@ export class EthdocComponent extends LitElement {
   async writeDoc(name: string) {
     try {
       const content = this.docs[name]
-      await this.client.fileManager.setFile(`browser/${name}.doc.md`, content)
+      await this.client.fileManager.setFile(`browser/doc/${name}.doc.md`, content)
       this.showAlert(name)
     } catch (err) {
       this.showAlert(name, err)
